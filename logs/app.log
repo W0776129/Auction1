@@ -1,0 +1,2 @@
+[2021-11-05T13:54:13.688005-04:00] Auction.CRITICAL: could not create db connection {"exception":"[object] (PDOException(code: 1045): SQLSTATE[HY000] [1045] Access denied for user 'npatel1'@'localhost' (using password: YES) at /home/npatel1/public_html/auction/app/Lib/Database.php:34)"} []
+[2021-11-05T13:55:02.106968-04:00] Auction.CRITICAL: could not create db connection {"exception":"[object] (PDOException(code: 1045): SQLSTATE[HY000] [1045] Access denied for user 'npatel1'@'localhost' (using password: YES) at /home/npatel1/public_html/auction/app/Lib/Database.php:34)"} []
