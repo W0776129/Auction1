@@ -11,6 +11,14 @@ class ComposerStaticInit6dd35405a4751c51e994d8f979f2d5db
         array (
             'Tests\\' => 6,
         ),
+        'P' => 
+        array (
+            'Psr\\Log\\' => 8,
+        ),
+        'M' => 
+        array (
+            'Monolog\\' => 8,
+        ),
         'A' => 
         array (
             'App\\' => 4,
@@ -21,6 +29,14 @@ class ComposerStaticInit6dd35405a4751c51e994d8f979f2d5db
         'Tests\\' => 
         array (
             0 => __DIR__ . '/../..' . '/tests',
+        ),
+        'Psr\\Log\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
+        ),
+        'Monolog\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
         ),
         'App\\' => 
         array (
