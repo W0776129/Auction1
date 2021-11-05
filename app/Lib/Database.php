@@ -34,6 +34,7 @@ class Database{
             $this->connection = new PDO("mysql:host=".DB_HOST.";dbname=".DB_NAME,DB_USER,DB_PASSWORD);
             $this->connection->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
         }catch (PDOException $e){
+            Logger::getLogger()->critical("could not create db connection",['exception'=>$e]);
             die();
         }
     }
@@ -62,6 +63,7 @@ class Database{
             }
 
         }catch (PDOException $e){
+            Logger::getLogger()->critical("could not execute query",['exception'=>$e]);
             die();
         }
     }
@@ -81,6 +83,7 @@ class Database{
             }
             return $statement->fetchAll(PDO::FETCH_CLASS | PDO::FETCH_PROPS_LATE,$class,$ctor_args);
         }catch (ReflectionException $e){
+            Logger::getLogger()->critical("Reflection Error",['exception'=>$e]);
             die();
         }
     }
